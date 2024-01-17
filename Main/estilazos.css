@@ -1,6 +1,7 @@
 :root {
-    --red-primary: #B71B02;
+    --red-primary: #991602;
     --beige-primary: #b3825656;
+    --beige-cards: #d4c0ad;
 }
 
 body {
@@ -9,10 +10,8 @@ body {
     background-color: var(--beige-primary);
     font-family: 'Satisfy', cursive;
     z-index: -1;
-}
-
-section {
-    position: absolute;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -23,6 +22,8 @@ section {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 0 0 20% 20%;
+    position: absolute;
+    height: 10%;
 }
 
 nav {
@@ -30,10 +31,15 @@ nav {
     display: flex;
     overflow: hidden;
     z-index: 100;
+    position: absolute;
 }
 
 .nav-left {
     width: 50%;
+}
+
+.nav-right {
+    width: 100%;
 }
 
 .nav-left p {
@@ -42,13 +48,11 @@ nav {
 
 }
 
-.nav-right {
-    width: 100%;
-}
 
 .nav-right ul {
     display: flex;
     align-items: flex-end;
+    align-items: center;
     list-style: none;
 }
 
@@ -61,27 +65,67 @@ nav {
 
 .nav-right ul li:hover {
     color: bisque;
+    width: 100%;
 
 }
-.background-image{
-}
 
-.background-image img {
-    position: inherit;
+.background-image-1 img {
+    position: relative;
     margin-top: 5vh;
-    z-index: 1;
     width: 100%;
     height: auto;
+    z-index: -1;
+    opacity: 80%;
 }
 
-.background-image p {
-    position: absolute;
+
+.background-image-1 p {
     display: flex;
-    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: bisque;
+
+}
+
+.main-text-1 {
+    position: absolute;
+    font-size: 80px;
     color: white;
     width: 50%;
     height: auto;
     z-index: 2;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 25%;
+}
+
+.section-2-container {
+    position: absolute;
+    height: 130vh;
+    background-color: var(--beige-cards);
+    margin: 0 12%;
+    top: 1050px;
+    border-radius: 0 5%;
+}
+
+.date-container, .map-container {
+    padding: 5vh;
+    text-align: center;
+}
+.date-container p:nth-child(1){
+    font-size: 100px;
+    margin: 0;
+}
+.date-container p:nth-child(2){
+    font-size:x-large;
+    margin: 0;
+}
+.background-image-2 img {
+    position: relative;
+    margin-top: 100vh;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 80%;
 }
