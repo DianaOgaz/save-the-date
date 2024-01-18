@@ -100,32 +100,77 @@ nav {
     left: 25%;
 }
 
-.section-2-container {
+.section-2-container{
     position: absolute;
-    height: 130vh;
+    height: 100vh;
     background-color: var(--beige-cards);
     margin: 0 12%;
     top: 1050px;
     border-radius: 0 5%;
+    border: black solid 1px;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.section-3-container {
+    position: absolute;
+    height: 100vh;
+    background-color: var(--beige-cards);
+    margin: 0 12%;
+    top: 2900px;
+    border-radius: 0 5%;
+    border: black solid 1px;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-.date-container, .map-container {
+.section-2, .section-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.date-container,
+.map-container {
     padding: 5vh;
     text-align: center;
 }
-.date-container p:nth-child(1){
+
+.date-container p:nth-child(1) {
     font-size: 100px;
     margin: 0;
 }
-.date-container p:nth-child(2){
-    font-size:x-large;
+
+.date-container p:nth-child(2) {
+    font-size: x-large;
     margin: 0;
 }
-.background-image-2 img {
+
+.background-image-2 img, .background-image-3 img{
     position: relative;
-    margin-top: 100vh;
+    margin: 0;
     width: 100%;
     height: auto;
     z-index: -1;
     opacity: 80%;
+    top: -500px;
+    background-size: cover;
 }
+/*----------------------------------------Cuenta regresiva-----------------------------------*/
+#timer {  
+    font-size: 500%;
+    font-weight: 100;
+    color: var(--red-primary);
+    
+    div {
+      display: inline-block;
+      min-width: 150px;
+      
+      span {
+        color: var(--red-primary);
+        display: block;
+        font-size: 40%;
+        font-weight: 400;
+      }
+    }
+  }
+  
