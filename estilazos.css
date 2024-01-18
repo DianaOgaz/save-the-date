@@ -2,6 +2,9 @@
     --red-primary: #991602;
     --beige-primary: #b3825656;
     --beige-cards: #d4c0ad;
+    --font-title: 100px;
+    --font-text: 30px;
+    --font-subtitle: 80px
 }
 
 body {
@@ -99,8 +102,12 @@ nav {
     top: 35%;
     left: 25%;
 }
+.card-title{
+    font-size: var(--font-title);
+    margin-bottom: 0;
+}
 
-.section-2-container{
+.section-2-container {
     position: absolute;
     height: 100vh;
     background-color: var(--beige-cards);
@@ -110,6 +117,7 @@ nav {
     border: black solid 1px;
     box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
 }
+
 .section-3-container {
     position: absolute;
     height: 100vh;
@@ -121,7 +129,8 @@ nav {
     box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-.section-2, .section-3{
+.section-2,
+.section-3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,22 +139,16 @@ nav {
 
 
 .date-container,
-.map-container {
+.map-container,
+.countdown-container {
     padding: 5vh;
     text-align: center;
 }
 
-.date-container p:nth-child(1) {
-    font-size: 100px;
-    margin: 0;
-}
 
-.date-container p:nth-child(2) {
-    font-size: x-large;
-    margin: 0;
-}
 
-.background-image-2 img, .background-image-3 img{
+.background-image-2 img,
+.background-image-3 img {
     position: relative;
     margin: 0;
     width: 100%;
@@ -155,22 +158,31 @@ nav {
     top: -500px;
     background-size: cover;
 }
-/*----------------------------------------Cuenta regresiva-----------------------------------*/
-#timer {  
+.card-subtitle{
+    font-size: var(--font-subtitle);
+}
+.card-text{
+    font-size: var(--font-text);
+}
+
+
+
+
+/*-------------------------------------Cuenta regresiva-----------------------------------*/ 
+#timer {
     font-size: 500%;
     font-weight: 100;
     color: var(--red-primary);
-    
+
     div {
-      display: inline-block;
-      min-width: 150px;
-      
-      span {
-        color: var(--red-primary);
-        display: block;
-        font-size: 40%;
-        font-weight: 400;
-      }
+        display: inline-block;
+        min-width: 150px;
+
+        span {
+            color: var(--red-primary);
+            display: block;
+            font-size: 40%;
+            font-weight: 400;
+        }
     }
-  }
-  
+}
