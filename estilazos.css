@@ -102,7 +102,8 @@ nav {
     top: 35%;
     left: 25%;
 }
-.card-title{
+
+.card-title {
     font-size: var(--font-title);
     margin-bottom: 0;
 }
@@ -129,26 +130,49 @@ nav {
     box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
+.section-4-container {
+    position: absolute;
+    height: 100vh;
+    background-color: var(--beige-cards);
+    margin: 0 12%;
+    top: 5000px;
+    border-radius: 0 5%;
+    border: black solid 1px;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
+}
+.section-5-container {
+    position: absolute;
+    height: 100vh;
+    background-color: var(--beige-cards);
+    margin: 0 12%;
+    top: 7000px;
+    border-radius: 0 5%;
+    border: black solid 1px;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
 .section-2,
-.section-3 {
+.section-3,
+.section-4,
+.section-5 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
 }
 
-
 .date-container,
 .map-container,
-.countdown-container {
+.countdown-container,
+.attendance,
+.micelane {
     padding: 5vh;
     text-align: center;
 }
 
-
-
 .background-image-2 img,
-.background-image-3 img {
+.background-image-3 img,
+.background-image-4 img {
     position: relative;
     margin: 0;
     width: 100%;
@@ -158,17 +182,126 @@ nav {
     top: -500px;
     background-size: cover;
 }
-.card-subtitle{
+
+.card-subtitle {
     font-size: var(--font-subtitle);
 }
-.card-text{
+
+.card-text {
     font-size: var(--font-text);
 }
+.hotels-reco{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ccc;
+}
+/*----------------------------Botoncito----------------------*/
+#button-attendance {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--beige-cards);
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-size: var(--font-text);
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+  }
+  
+  #button-attendance:before,
+  #button-attendance:after {
+    border-radius: 80px;
+  }
+  
+  #button-attendance:before {
+    background-image: linear-gradient(92.83deg, #991602 0, #991602 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  #button-attendance:after {
+    background-color: initial;
+    background-image: linear-gradient(#a1240b 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  #button-attendance:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, --red-primary 0%, --beige-primary 100%);
+  }
+  
+  #button-attendance:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  #button-attendance:active:not(:disabled) {
+    color: #ccc;
+  }
+  
+  #button-attendance:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, --red-primary, --red-primary);
+  }
+  
+  #button-attendance:active:not(:disabled):after {
+    background-image: linear-gradient(#d4d2d2 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+  
+  #button-attendance:disabled {
+    cursor: default;
+    opacity: .24;
+  }
 
 
 
-
-/*-------------------------------------Cuenta regresiva-----------------------------------*/ 
+/*-------------------------------------Cuenta regresiva-----------------------------------*/
 #timer {
     font-size: 500%;
     font-weight: 100;
@@ -186,3 +319,7 @@ nav {
         }
     }
 }
+
+
+
+
