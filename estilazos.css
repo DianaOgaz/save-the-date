@@ -192,6 +192,7 @@ nav {
 }
 .hotels-reco{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     background-color: #ccc;
 }
@@ -298,8 +299,10 @@ nav {
     cursor: default;
     opacity: .24;
   }
-
-
+.hotel-img img{
+    width: 300px;
+    height: auto;
+}
 
 /*-------------------------------------Cuenta regresiva-----------------------------------*/
 #timer {
