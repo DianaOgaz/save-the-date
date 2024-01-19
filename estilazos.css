@@ -68,8 +68,6 @@ nav {
 
 .nav-right ul li:hover {
     color: bisque;
-    width: 100%;
-
 }
 
 .background-image-1 img {
@@ -322,7 +320,17 @@ nav {
         }
     }
 }
+/*------------------------------------ Movile ---------------------------------------------*/
+@media (max-width: 750px) {
+    .background-image-1 p {
+        font-size:30px;
+    }
+    .nav-left p {
+        margin: 5% 10%;
+        font-size: 20px;
+      }
+      .nav-right {
+        display: none;
+      }
 
-
-
-
+}
