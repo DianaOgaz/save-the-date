@@ -301,6 +301,9 @@ nav {
     width: 300px;
     height: auto;
 }
+.inactive{
+    display: none;
+}
 
 /*-------------------------------------Cuenta regresiva-----------------------------------*/
 #timer {
