@@ -410,4 +410,19 @@ nav {
 .nav-right-movile ul li {
     padding-left: 5px;
 }
+.background-image-1 img {
+    position: relative;
+    margin-top: 12vh;
+    width: 210%;
+    height: auto;
+    z-index: -1;
+    opacity: 80%;
+  }
+  .main-text-1{
+    top: 16%;
+  left: 25%;
+  }
+  .main-text-1 p{
+    font-size: 50px;
+  }
 }
