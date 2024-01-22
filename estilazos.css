@@ -52,12 +52,17 @@ nav {
 }
 
 
-.nav-right ul, .nav-right-movile ul {
+.nav-right ul,
+.nav-right-movile ul {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.nav-right-movile {
+    display: none;
 }
 
 .nav-right ul li p {
@@ -70,13 +75,15 @@ nav {
 .nav-right ul li:hover {
     color: bisque;
 }
-.menu-list-movile li img{
+
+.menu-list-movile li img {
     width: 40px;
     height: 40px;
     margin: 0;
     padding: 10px;
     padding-bottom: 0;
 }
+
 .nav-right-movile {
     height: 70px;
 }
@@ -150,6 +157,7 @@ nav {
     border: black solid 1px;
     box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
 }
+
 .section-5-container {
     position: absolute;
     height: 100vh;
@@ -200,12 +208,14 @@ nav {
 .card-text {
     font-size: var(--font-text);
 }
-.hotels-reco{
+
+.hotels-reco {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     background-color: #ccc;
 }
+
 /*----------------------------Botoncito----------------------*/
 #button-attendance {
     align-items: center;
@@ -241,14 +251,14 @@ nav {
     width: auto;
     word-break: keep-all;
     z-index: 0;
-  }
-  
-  #button-attendance:before,
-  #button-attendance:after {
+}
+
+#button-attendance:before,
+#button-attendance:after {
     border-radius: 80px;
-  }
-  
-  #button-attendance:before {
+}
+
+#button-attendance:before {
     background-image: linear-gradient(92.83deg, #991602 0, #991602 100%);
     content: "";
     display: block;
@@ -259,9 +269,9 @@ nav {
     top: 0;
     width: 100%;
     z-index: -2;
-  }
-  
-  #button-attendance:after {
+}
+
+#button-attendance:after {
     background-color: initial;
     background-image: linear-gradient(#a1240b 0, #0c0d0d 100%);
     bottom: 4px;
@@ -274,46 +284,48 @@ nav {
     top: 4px;
     transition: all 100ms ease-out;
     z-index: -1;
-  }
-  
-  #button-attendance:hover:not(:disabled):before {
+}
+
+#button-attendance:hover:not(:disabled):before {
     background: linear-gradient(92.83deg, --red-primary 0%, --beige-primary 100%);
-  }
-  
-  #button-attendance:hover:not(:disabled):after {
+}
+
+#button-attendance:hover:not(:disabled):after {
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     transition-timing-function: ease-in;
     opacity: 0;
-  }
-  
-  #button-attendance:active:not(:disabled) {
+}
+
+#button-attendance:active:not(:disabled) {
     color: #ccc;
-  }
-  
-  #button-attendance:active:not(:disabled):before {
+}
+
+#button-attendance:active:not(:disabled):before {
     background-image: linear-gradient(0deg, --red-primary, --red-primary);
-  }
-  
-  #button-attendance:active:not(:disabled):after {
+}
+
+#button-attendance:active:not(:disabled):after {
     background-image: linear-gradient(#d4d2d2 0, #0c0d0d 100%);
     bottom: 4px;
     left: 4px;
     right: 4px;
     top: 4px;
-  }
-  
-  #button-attendance:disabled {
+}
+
+#button-attendance:disabled {
     cursor: default;
     opacity: .24;
-  }
-.hotel-img img{
+}
+
+.hotel-img img {
     width: 300px;
     height: auto;
 }
-.inactive{
+
+.inactive {
     display: none;
 }
 
@@ -335,16 +347,67 @@ nav {
         }
     }
 }
+
 /*------------------------------------ Movile ---------------------------------------------*/
 @media (max-width: 750px) {
     .background-image-1 p {
-        font-size:30px;
+        font-size: 30px;
     }
+
     .nav-left p {
         font-size: 25px;
-      }
-      .nav-right {
-        display: none;
-      }
+    }
 
+    .nav-right {
+        display: none;
+    }
+
+    .nav-right-movile {
+        display: flex;
+    }
+
+    .nav-left,
+    .nav-right {
+        text-align: center;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .navbar {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .nav-left-icono {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-height: 72px;
+        max-width: 90px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .nav-left p {
+        display: none;
+        margin-left: 20px;
+    }
+  
+    .menu-list-movile li img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 5%;
+        padding-left: 5px;
+        padding-bottom: 0;
+}
+.nav-right-movile ul {
+    margin-right: 40px;
+}
+.nav-right-movile ul li {
+    padding-left: 5px;
+}
 }
