@@ -1,0 +1,32 @@
+:root {
+    --red-primary: #991602;
+    --beige-primary: #b3825656;
+    --beige-cards: #d4c0ad;
+    --font-title: 100px;
+    --font-text: 22px;
+    --font-subtitle: 80px;
+    --font-movile-title: 27px;
+    --font-movile-subtitle: 20px;
+}
+body{
+    background-color: var(--beige-primary);
+}
+nav {
+    background-color: var(--red-primary);
+    height: 150px;
+    border-radius: 0 0 10% 10%;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.container-fluid a {
+    font-size: var(--font-text);
+}
+
+.container-fluid a:hover {
+    color: bisque;
+}
+
