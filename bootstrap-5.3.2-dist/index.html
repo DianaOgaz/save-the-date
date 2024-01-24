@@ -9,6 +9,7 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="./js/countdown.js"></script>
     <title>Document</title>
 </head>
 
@@ -17,8 +18,7 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">
-                <img src="/bootstrap-5.3.2-dist/Main/img/logo-movile.png" Logo" 
-                    class="d-inline-block align-text-top">
+                <img src="/bootstrap-5.3.2-dist/Main/img/logo-movile.png" Logo" class="d-inline-block align-text-top">
             </a>
         </div>
         <div class="container-fluid ">
@@ -52,7 +52,7 @@
     </nav>
     <br>
     <!-------------------------------------carrusel-------------------------------------->
-    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide position-relative" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./Main/img/foto1.jpg" class="d-block w-100" alt="...">
@@ -64,7 +64,88 @@
                 <img src="./Main/img/foto3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
+        <p class="fs-1 lh-lg text-center position-absolute top-50 start-50 translate-middle-x">César Antonio Gonzales
+            Ramos & Diana Teresa Ogaz Escarpita</p>
     </div>
+    <br>
+    <!---------------------------------------- Cards 1 ------------------------------------------->
+    <div class="card container-sm">
+        <div class="card-body">
+            <p class="text-center fs-1"> 9 / Noviembre / 2024 </p>
+            <p class="lh-base fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet cumque fugit
+                unde neque corrupti
+                sunt
+                obcaecati alias quisquam autem, deleniti ea sapiente dolorem distinctio nostrum consequatur dignissimos
+                accusamus illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, illo eveniet!
+                Autem
+                quasi suscipit iure culpa ducimus, eos magni tempore beatae quas deserunt cumque aliquam voluptatum
+                illum
+                nemo voluptatibus id!Lorem</p>
+            <p class="text-center fs-2"> Hacienda Real </p>
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28011.545434915737!2d-106.11874991376956!3d28.646446072194866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43d83cfd3b7f%3A0x4b9c5e263bcbdbab!2sPlaza%20Galer%C3%ADas%20Chihuahua!5e0!3m2!1ses!2smx!4v1705530763702!5m2!1ses!2smx"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="80%" height="400px"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <img src="./Main/img/foto3.jpg" alt="" width="100%" height="auto">
+    <br>
+    <br>
+    <div class="countdown card container-sm  ">
+        <div class="row">
+            <div class="col">
+                <img src="./Main/img/foto3.jpg" alt="" width="300px" height="600px">
+            </div>
+            <div class="countdown-content col-6  ">
+                <div id="timer" class="countdown-text fs-4 text-center d-flex justify-content-around"></div>
+                <br>
+                <p class="lh-base fs-4"> ¡Inicia la cuenta regresiva! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Vitae eveniet
+                    cumque
+                    fugit
+                    unde neque corrupti
+                    sunt
+                    obcaecati alias quisquam autem, deleniti ea sapiente dolorem distinctio nostrum consequatur
+                    dignissimos
+                    accusamus illo! </p>
+            </div>
+            <div class="col">
+                <img src="./Main/img/foto3.jpg" alt="" width="300px" height="600px">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="card container-sm">
+        <div class="card-body">
+            <p class="text-center fs-1"> !Confirma tu asistencia! </p>
+            <p class="lh-base fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet cumque fugit
+                unde neque corrupti
+                sunt
+                obcaecati alias quisquam autem, deleniti ea sapiente dolorem distinctio nostrum consequatur dignissimos
+                accusamus illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, illo eveniet!
+                Autem
+                quasi suscipit iure culpa ducimus, eos magni tempore beatae quas deserunt cumque aliquam voluptatum
+                illum
+                nemo voluptatibus id!Lorem</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-outline-danger" type="button">Button</button>
+                  </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
 
 </body>
 

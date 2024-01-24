@@ -29,4 +29,16 @@ nav {
 .container-fluid a:hover {
     color: bisque;
 }
+.card{
+    background-color: var(--beige-cards);
+}
+.countdown{
+    padding-top: 10vh;
+}
+.countdown-content p:nth-child(1){
+    text-justify: auto;
+}
+.countdown-text{
+    
+}
 
