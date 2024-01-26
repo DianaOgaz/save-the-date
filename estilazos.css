@@ -8,9 +8,14 @@
     --font-movile-title: 27px;
     --font-movile-subtitle: 20px;
 }
+html{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: var(--beige-primary);
+    overflow-x: hidden;
 }
 
 nav {
@@ -70,11 +75,15 @@ p {
     color: var(--red-primary)
 }
 
+.navbar-brand {
+    z-index: 10;
+}
+
 /*----------------------------media query-----------------------------*/
 @media (max-width:500px) {
     nav {
         display: flex;
-        height: 80px;
+        height: 100px;
     }
 
     .navbar-brand img {
@@ -110,16 +119,25 @@ p {
         display: contents;
     }
 
-    .fs-4 {
-        font-size: small;
-    }
-    .flower-container img{
+    .flower-container img {
         width: 50%;
         height: auto;
     }
-    .col{
+
+    .col {
         padding: 5vh;
     }
+
+    .main-menu-movile {
+        background-color: #ddd9c4;
+        z-index: 10;
+        padding: 4vh;
+    }
+
+    .navbar-toggler-icon {
+        height: 2.5em;
+    }
+    .card{
+    }
    
-    
 }
