@@ -8,13 +8,19 @@
     --font-movile-title: 27px;
     --font-movile-subtitle: 20px;
 }
-body{
+
+body {
     background-color: var(--beige-primary);
 }
+
 nav {
     background-color: var(--red-primary);
     height: 150px;
     border-radius: 0 0 10% 10%;
+}
+
+p {
+    text-align: center;
 }
 
 .navbar-brand img {
@@ -29,16 +35,91 @@ nav {
 .container-fluid a:hover {
     color: bisque;
 }
-.card{
+
+.card {
     background-color: var(--beige-cards);
 }
-.countdown{
-    padding-top: 10vh;
-}
-.countdown-content p:nth-child(1){
-    text-justify: auto;
-}
-.countdown-text{
-    
+
+.countdown {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
+.countdown-content p:nth-child(1) {
+    text-justify: auto;
+}
+
+.countdown-text {
+    color: var(--red-primary);
+}
+
+.main-text-love-3 {
+    position: absolute;
+    top: 80px;
+}
+
+.main-titles {
+    width: 100%;
+    top: 25%;
+}
+
+.main-titles p {
+    color: var(--red-primary)
+}
+
+.main-text {
+    color: var(--red-primary)
+}
+
+/*----------------------------media query-----------------------------*/
+@media (max-width:500px) {
+    nav {
+        display: flex;
+        height: 80px;
+    }
+
+    .navbar-brand img {
+        width: 70px;
+        height: auto;
+        align-content: center;
+
+    }
+
+    .movile-container-heart {
+        width: 50%;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .main-text-love {
+        width: 60%;
+        top: 25% !important;
+    }
+
+    .carousel-item img {
+        height: 700px;
+    }
+
+    .countdown-content {
+        width: 100%;
+        padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    }
+
+    .countdown-content div {
+        display: contents;
+    }
+
+    .fs-4 {
+        font-size: small;
+    }
+    .flower-container img{
+        width: 50%;
+        height: auto;
+    }
+    .col{
+        padding: 5vh;
+    }
+   
+    
+}
