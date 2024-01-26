@@ -1,471 +1,125 @@
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
-
 :root {
     --red-primary: #991602;
     --beige-primary: #b3825656;
     --beige-cards: #d4c0ad;
     --font-title: 100px;
-    --font-text: 30px;
+    --font-text: 22px;
     --font-subtitle: 80px;
     --font-movile-title: 27px;
     --font-movile-subtitle: 20px;
 }
 
 body {
-    width: 100%;
-    height: 100%;
     background-color: var(--beige-primary);
-    font-family: 'Satisfy', cursive;
-    z-index: -1;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    display: flex;
-    width: 80%;
-    height: 10vh;
-    background-color: var(--red-primary);
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 0 0 20% 20%;
-    position: absolute;
-    height: 10%;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-    z-index: 100;
-    position: absolute;
+    background-color: var(--red-primary);
+    height: 150px;
+    border-radius: 0 0 10% 10%;
 }
 
-.nav-left {
-    width: 50%;
-}
-
-.nav-right {
-    width: 100%;
-}
-
-.nav-left p {
-    margin: 5% 10%;
-    font-size: 200%;
-
-}
-
-
-.nav-right ul,
-.nav-right-movile ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-right-movile {
-    display: none;
-}
-
-.nav-right ul li p {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 10px 0 0 0;
-    font-size: 150%;
-}
-
-.nav-right ul li:hover {
-    color: bisque;
-}
-
-.menu-list-movile li img {
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.nav-right-movile {
-    height: 70px;
-}
-
-
-.background-image-1 img {
-    position: relative;
-    margin-top: 5vh;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    opacity: 80%;
-}
-
-
-.background-image-1 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    color: bisque;
-
-}
-
-.main-text-1 {
-    position: absolute;
-    font-size: 80px;
-    color: white;
-    width: 50%;
-    height: auto;
-    z-index: 2;
-    top: 35%;
-    left: 25%;
-}
-
-.card-title {
-    font-size: var(--font-title);
-    margin-bottom: 0;
-}
-
-.section-2-container {
-    position: absolute;
-    height: 100vh;
-    background-color: var(--beige-cards);
-    margin: 0 12%;
-    top: 1050px;
-    border-radius: 0 5%;
-    border: black solid 1px;
-    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-.section-3-container {
-    position: absolute;
-    height: 100vh;
-    background-color: var(--beige-cards);
-    margin: 0 12%;
-    top: 2900px;
-    border-radius: 0 5%;
-    border: black solid 1px;
-    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-.section-4-container {
-    position: absolute;
-    height: 100vh;
-    background-color: var(--beige-cards);
-    margin: 0 12%;
-    top: 5000px;
-    border-radius: 0 5%;
-    border: black solid 1px;
-    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-.section-5-container {
-    position: absolute;
-    height: 100vh;
-    background-color: var(--beige-cards);
-    margin: 0 12%;
-    top: 7000px;
-    border-radius: 0 5%;
-    border: black solid 1px;
-    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.2);
-}
-
-.section-2,
-.section-3,
-.section-4,
-.section-5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.date-container,
-.map-container,
-.countdown-container,
-.attendance,
-.micelane {
-    padding: 5vh;
+p {
     text-align: center;
 }
 
-.background-image-2 img,
-.background-image-3 img,
-.background-image-4 img {
-    position: relative;
-    margin: 0;
-    width: 100%;
+.navbar-brand img {
+    width: 150px;
     height: auto;
-    z-index: -1;
-    opacity: 80%;
-    top: -500px;
-    background-size: cover;
 }
 
-.card-subtitle {
-    font-size: var(--font-subtitle);
-}
-
-.card-text {
+.container-fluid a {
     font-size: var(--font-text);
 }
 
-.hotels-reco {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #ccc;
+.container-fluid a:hover {
+    color: bisque;
 }
 
-/*----------------------------Botoncito----------------------*/
-#button-attendance {
-    align-items: center;
-    appearance: none;
-    background-clip: padding-box;
-    background-color: initial;
-    background-image: none;
-    border-style: none;
-    box-sizing: border-box;
-    color: var(--beige-cards);
-    cursor: pointer;
-    display: inline-block;
-    flex-direction: row;
-    flex-shrink: 0;
-    font-size: var(--font-text);
-    font-weight: 800;
-    justify-content: center;
-    line-height: 24px;
-    margin: 0;
-    min-height: 64px;
-    outline: none;
-    overflow: visible;
-    padding: 19px 26px;
-    pointer-events: auto;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: auto;
-    word-break: keep-all;
-    z-index: 0;
+.card {
+    background-color: var(--beige-cards);
 }
 
-#button-attendance:before,
-#button-attendance:after {
-    border-radius: 80px;
+.countdown {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
 }
 
-#button-attendance:before {
-    background-image: linear-gradient(92.83deg, #991602 0, #991602 100%);
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -2;
+.countdown-content p:nth-child(1) {
+    text-justify: auto;
 }
 
-#button-attendance:after {
-    background-color: initial;
-    background-image: linear-gradient(#a1240b 0, #0c0d0d 100%);
-    bottom: 4px;
-    content: "";
-    display: block;
-    left: 4px;
-    overflow: hidden;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    transition: all 100ms ease-out;
-    z-index: -1;
-}
-
-#button-attendance:hover:not(:disabled):before {
-    background: linear-gradient(92.83deg, --red-primary 0%, --beige-primary 100%);
-}
-
-#button-attendance:hover:not(:disabled):after {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition-timing-function: ease-in;
-    opacity: 0;
-}
-
-#button-attendance:active:not(:disabled) {
-    color: #ccc;
-}
-
-#button-attendance:active:not(:disabled):before {
-    background-image: linear-gradient(0deg, --red-primary, --red-primary);
-}
-
-#button-attendance:active:not(:disabled):after {
-    background-image: linear-gradient(#d4d2d2 0, #0c0d0d 100%);
-    bottom: 4px;
-    left: 4px;
-    right: 4px;
-    top: 4px;
-}
-
-#button-attendance:disabled {
-    cursor: default;
-    opacity: .24;
-}
-
-.hotel-img img {
-    width: 300px;
-    height: auto;
-}
-
-.inactive {
-    display: none;
-}
-
-/*-------------------------------------Cuenta regresiva-----------------------------------*/
-#timer {
-    font-size: 500%;
-    font-weight: 100;
+.countdown-text {
     color: var(--red-primary);
-
-    div {
-        display: inline-block;
-        min-width: 150px;
-
-        span {
-            color: var(--red-primary);
-            display: block;
-            font-size: 40%;
-            font-weight: 400;
-        }
-    }
 }
 
-/*------------------------------------ Movile ---------------------------------------------*/
-@media (max-width: 750px) {
-    .background-image-1 p {
-        font-size: 30px;
-    }
+.main-text-love-3 {
+    position: absolute;
+    top: 80px;
+}
 
-    .nav-left p {
-        font-size: 25px;
-    }
+.main-titles {
+    width: 100%;
+    top: 25%;
+}
 
-    .nav-right {
-        display: none;
-    }
+.main-titles p {
+    color: var(--red-primary)
+}
 
-    .nav-right-movile {
+.main-text {
+    color: var(--red-primary)
+}
+
+/*----------------------------media query-----------------------------*/
+@media (max-width:500px) {
+    nav {
         display: flex;
+        height: 80px;
     }
 
-    .nav-left,
-    .nav-right {
-        text-align: center;
+    .navbar-brand img {
+        width: 70px;
+        height: auto;
+        align-content: center;
+
     }
 
-    select {
+    .movile-container-heart {
+        width: 50%;
+    }
+
+    .menu-container {
+        width: 50%;
+    }
+
+    .main-text-love {
+        width: 60%;
+        top: 25% !important;
+    }
+
+    .carousel-item img {
+        height: 700px;
+    }
+
+    .countdown-content {
         width: 100%;
+        padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     }
 
-    .navbar {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+    .countdown-content div {
+        display: contents;
     }
 
-    .nav-left-icono {
-        display: flex;
-        width: 80%;
-        height: auto;
-        max-height: 72px;
-        max-width: 90px;
-        margin-left: 10px;
-        margin-top: 5px;
+    .fs-4 {
+        font-size: small;
     }
-
-    .nav-left p {
-        display: none;
-        margin-left: 20px;
-    }
-
-    .menu-list-movile li img {
-        width: 40px;
-        height: 40px;
-        margin: 0;
-        padding: 5%;
-        padding-left: 5px;
-        padding-bottom: 0;
-    }
-
-    .nav-right-movile ul {
-        margin-right: 40px;
-    }
-
-    .nav-right-movile ul li {
-        padding-left: 5px;
-    }
-
-    .background-image-1 img {
-        position: relative;
-        margin-top: 12vh;
-        width: 100vh;
-        height: auto;
-        z-index: -1;
-        opacity: 80%;
-    }
-
-    .main-text-1 {
-        top: 16%;
-        left: 25%;
-    }
-
-    .main-text-1 p {
-        font-size: 50px;
-    }
-
-    .section-2-container {
-        width: 80%;
-        height: 80%;
-        top: 100%;
-    }
-
-    .card-title {
-        font-size: var(--font-movile-title);
-    }
-
-    .card-text {
-        font-size: var(--font-movile-subtitle);
-    }
-
-    .background-image-2 img {
-        display: none;
-    }
-
-    .map {
-        display: grid;
-        place-items: center;
-        padding: 20px;
+    .flower-container img{
+        width: 50%;
         height: auto;
     }
-
-    .map iframe {
-        width: 370px;
-        height: 400px;
+    .col{
+        padding: 5vh;
     }
-    .section-2-container {
-        height: 50%;
-    }
+   
+    
 }
