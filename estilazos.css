@@ -17,6 +17,7 @@ html{
 body {
     background-color: var(--beige-primary);
     overflow-x: hidden;
+    font-family: 'Cookie', cursive;
 }
 
 nav {
@@ -33,7 +34,9 @@ p {
     width: 150px;
     height: auto;
 }
-
+.main-text-love{
+font-size: 500%;
+}
 .container-fluid a {
     font-size: var(--font-text);
 }
@@ -73,7 +76,8 @@ p {
 }
 
 .main-text {
-    color: var(--red-primary)
+    color: var(--red-primary);
+    font-size: 280%;
 }
 
 .navbar-brand {
@@ -103,8 +107,7 @@ p {
     }
 
     .main-text-love {
-        width: 60%;
-        top: 25% !important;
+        font-size: 250%;
     }
 
     .carousel-item img {
@@ -114,6 +117,8 @@ p {
     .countdown-content {
         width: 100%;
         padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+        font-size: 60%;
+
     }
 
     .countdown-content div {
@@ -138,7 +143,6 @@ p {
     .navbar-toggler-icon {
         height: 2.5em;
     }
-    .card{
-    }
+    
    
 }
