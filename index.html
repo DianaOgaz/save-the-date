@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="./estilazos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="./js/countdown.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+
     <title>Document</title>
 </head>
 
@@ -52,8 +53,11 @@
         </div>
     </nav>
     <br>
+
+
     <!-------------------------------------carrusel-------------------------------------->
-    <div id="carouselExampleSlidesOnly animate__animated animate__fadeInDown" class="carousel slide position-relative" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly animate__animated animate__fadeInDown" class="carousel slide position-relative"
+        data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./Main/img/cuple1.jpg" class="d-block w-100 opacity-75" alt="...">
@@ -65,21 +69,22 @@
                 <img src="./Main/img/cuple3.jpg" class="d-block w-100 opacity-75" alt="...">
             </div>
         </div>
-        <div class="main-titles text-center fs-1 position-absolute">
+        <div class="main-titles text-center fs-1 position-absolute" data-aos="fade-up" >
 
-            <p class="fs-1 lh-lg animate__animated animate__fadeInDown ">
+            <p class="fs-1 lh-lg wow fadeIn " data-wow-duration="2s" data-wow-delay="0.5s">
                 César Antonio Gonzales Ramos</p>
             <br>
-            <p class="fs-1 lh-lg animate__animated animate__fadeInDown">&</p>
+            <p class="fs-1 lh-lg ">&</p>
             <br>
-            <p class="fs-1 lh-lg animate__animated animate__fadeInDown">Diana
+            <p class="fs-1 lh-lg ">Diana
                 Teresa Ogaz Escarpita</p>
         </div>
 
     </div>
     <!---------------------------------------- Cards 1 ------------------------------------------->
+
     <img src="./Main/img/flower2.png" alt="" width="100%" height="auto">
-    <div class="card container-sm ">
+    <div class="card container-sm " data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="card-body">
             <p class="main-text text-center fs-1"> 9 / Noviembre / 2024 </p>
             <p class="lh-base fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eveniet cumque fugit
@@ -108,7 +113,7 @@
     <!------------------------------------------Card 2 ---------------------------------------------->
     <div class="countdown card container-sm  text-center">
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center" data-aos="fade-right">
                 <img src="./Main/img/table1.jpg" alt="" width="300px" height="600px">
             </div>
             <div class="countdown-content col-6 text-center">
@@ -125,7 +130,7 @@
                     dignissimos
                     accusamus illo! </p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center" data-aos="fade-left">
                 <img src="./Main/img/table2.jpg" alt="" width="300px" height="600px">
             </div>
         </div>
@@ -144,7 +149,7 @@
                 quasi suscipit iure culpa ducimus, eos magni tempore beatae quas deserunt cumque aliquam voluptatum
                 illum
                 nemo voluptatibus id!Lorem</p>
-            <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="d-grid gap-2 col-6 mx-auto " data-aos="zoom-in-up">
                 <button class="btn btn-outline-danger" type="button">Cuestionario</button>
             </div>
         </div>
@@ -159,7 +164,7 @@
     <!------------------------------------------Cards 4 ---------------------------------------------->
     <div class="container container-sm ">
         <div class="row ">
-            <div class="col ">
+            <div class="col " data-aos="fade-up" >
                 <div class="card container-sm " style="width: 18rem;">
                     <img src="./Main/img/drink-icono.png" class="card-img-top top mx-auto d-block" style="width: 100px;"
                         alt="...">
@@ -171,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" >
                 <div class="card container-sm" style="width: 18rem;">
                     <img src="./Main/img/dress-code-icono.png" class="card-img-top top mx-auto d-block"
                         style="width: 100px;" alt="...">
@@ -181,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up" >
                 <div class="card container-sm mx-auto" style="width: 18rem;">
                     <img src="./Main/img/children-icono.png" class="card-img-top mx-auto d-block" style="width: 100px;"
                         alt="...">
@@ -224,5 +229,10 @@
     <img src="./Main/img/flower3.png" width="100%" height="auto">
 
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 </html>
