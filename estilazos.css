@@ -36,8 +36,7 @@ p {
 }
 
 .main-text-love {
-    font-size: 800%;
-    -webkit-text-stroke: 1px black;
+    font-size: 500%;
 }
 
 .container-fluid a {
@@ -71,7 +70,8 @@ p {
 
 .main-titles {
     width: 100%;
-    top: 10%;
+    top: -20%;
+    padding: 20%;
 }
 
 .main-titles p {
@@ -85,6 +85,15 @@ p {
 
 .navbar-brand {
     z-index: 10;
+}
+
+.last-flowers {
+    top: 581vh;
+}
+
+footer div {
+    height: 30vh;
+    background-color: var(--red-primary);
 }
 
 /*----------------------------media query-----------------------------*/
@@ -110,19 +119,23 @@ p {
     }
 
     .main-text-love {
-        font-size: 250%;
-        -webkit-text-stroke: 1px bisque;
+        font-size: 280%;
     }
 
-    .carousel-item  {
+    .main-titles {
+        top: -5%;
+    }
+
+    .carousel-item {
         overflow: hidden;
         height: 100vh;
     }
+
     .carousel-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: block; 
+        display: block;
         margin: 0 auto;
     }
 
@@ -169,6 +182,10 @@ p {
 
     .navbar-toggler {
         border: 2px solid black;
+    }
+
+    footer div {
+        height: 10vh;
     }
 
 }
