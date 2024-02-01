@@ -36,7 +36,8 @@ p {
 }
 
 .main-text-love {
-    font-size: 500%;
+    font-size: 800%;
+    -webkit-text-stroke: 1px black;
 }
 
 .container-fluid a {
@@ -70,7 +71,7 @@ p {
 
 .main-titles {
     width: 100%;
-    top: 25%;
+    top: 10%;
 }
 
 .main-titles p {
@@ -110,6 +111,7 @@ p {
 
     .main-text-love {
         font-size: 250%;
+        -webkit-text-stroke: 1px bisque;
     }
 
     .carousel-item  {
