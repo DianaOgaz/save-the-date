@@ -1,7 +1,7 @@
 :root {
     --red-primary: #991602;
-    --beige-primary: #b3825656;
-    --beige-cards: #d4c0ad;
+    --beige-primary: #ecc6a456;
+    --beige-cards: #f5dbc5;
     --font-title: 100px;
     --font-text: 22px;
     --font-subtitle: 80px;
@@ -49,6 +49,8 @@ p {
 
 .card {
     background-color: var(--beige-cards);
+    box-shadow: 5px 5px 25px #aa9784 inset;
+
 }
 
 .countdown {
