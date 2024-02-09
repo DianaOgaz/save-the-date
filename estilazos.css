@@ -9,12 +9,9 @@
     --font-movile-subtitle: 20px;
 }
 
-html {
-    margin: 0;
-    padding: 0;
-}
 
-body {
+body,
+html {
     background-color: var(--beige-primary);
     overflow-x: hidden;
     font-family: 'Cookie', cursive;
@@ -99,7 +96,7 @@ footer div {
 }
 
 /*----------------------------media query-----------------------------*/
-@media (max-width:500px) {
+@media (max-width:900px) {
     nav {
         display: flex;
         height: 100px;
@@ -136,7 +133,7 @@ footer div {
 
     .carousel-item img {
         width: 100%;
-        height:100%;
+        height: 100%;
         object-fit: cover;
         display: block;
         margin: 0 auto;
@@ -192,4 +189,7 @@ footer div {
         height: 10vh;
     }
 
+    .card {
+        width: 90%;
+    }
 }
