@@ -103,6 +103,9 @@ footer div {
     height: 30vh;
     background-color: var(--red-primary);
 }
+.warning-text{
+    font-size: large;
+}
 
 /*----------------------------media query-----------------------------*/
 @media (max-width:900px) {
