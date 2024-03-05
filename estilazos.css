@@ -108,7 +108,7 @@ footer div {
 }
 
 /*----------------------------media query-----------------------------*/
-@media (max-width:900px) {
+@media (max-width:1500px) {
     nav {
         display: flex;
         height: 100px;
@@ -122,12 +122,9 @@ footer div {
     }
 
     .movile-container-heart {
-        width: 50%;
+        width: 100%;
     }
 
-    .menu-container {
-        width: 50%;
-    }
 
     .main-text-love {
         font-size: 280%;
