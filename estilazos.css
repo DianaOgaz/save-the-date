@@ -17,11 +17,10 @@ html {
     font-family: "Ojuju", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
-    overflow-x: hidden;
 }
 
 body {
+    overflow-x: hidden;
 }
 
 nav {
@@ -108,7 +107,7 @@ footer div {
 }
 
 /*----------------------------media query-----------------------------*/
-@media (max-width:1500px) {
+@media (max-width:2500px) {
     nav {
         display: flex;
         height: 100px;
